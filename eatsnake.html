@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	#ground {
+		width: 1000px;
+		height: 500px;
+		background: yellow;
+		position: relative;
+	};
+	input {
+		height: 50px;
+		line-height: 50px;
+	}
+	#tools {
+		width: 200px;
+		height: 50px;
+	}
+	.block {
+		width: 20px;
+		height: 20px;
+		background: aqua;
+		float: left;
+	};
+	.snakeBody {
+		width: 20px;
+		height: 20px;
+		background: orange;
+		position: absolute;
+		top: 60px;
+	}；
+	.foodSnake {
+		background: orange;
+		position: absolute;
+	}
+	.food {
+		width: 20px;
+		height: 20px;
+		background: green;
+		position: absolute;
+	}
+	</style>
+</head>
+<body>
+	<div id="tools">
+	<input type="button" id="start" value="开始">
+	<input type="button" id="pause" value="暂停">
+</div>
+<div id="ground"></div>
+<script type="text/javascript" src="js文件/eatsnake.js"></script>
+</body>
+</html>
