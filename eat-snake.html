@@ -4,26 +4,24 @@
 	<title></title>
 	<meta charset="UTF-8">
 	<style type="text/css">
+	body {
+		background: #FFF5EE;
+	}
 	#ground {
 		width: 1000px;
 		height: 500px;
-		background: yellow;
 		position: relative;
-	};
-	input {
-		height: 50px;
-		width: 50px;
 	}
-	#tools {
-		height: 50px;
-		line-height: 50px;
+	input[type="button"] {
+		height: 30px;
+		width: 50px;
 	}
 	.block {
 		width: 20px;
 		height: 20px;
 		background: aqua;
 		float: left;
-	};
+	}
 	.snakeBody {
 		width: 20px;
 		height: 20px;
@@ -31,25 +29,41 @@
 		position: absolute;
 		top: 60px;
 		float: left;
-	}；
+	}
 	.foodSnake {
 		background: orange;
 		position: absolute;
 	}
 	.food {
-/*		width: 20px;
-		height: 20px;*/
 		background: green;
 		position: absolute;
 		float:left;
 	}
+	#score {
+		margin-left: 100px;
+		color:blue;
+		font-weight: bold;
+	}
+	#tools {
+		margin-bottom: 10px;
+	}
+	input[type="text"] {
+		display: inline-block;
+		width: 200px;
+		height: 20px;
+		border: 2px solid green;
+		font-size: 20px;
+		background-color: #FFE4B5;
+		color: red;
+	}
+	
 	</style>
 </head>
 <body>
-	<div id="tools">
-	<input type="button" id="start" value="开始" style="width:50px;height:30px;">
-	<input type="button" id="pause" value="暂停" style="width:50px;height:30px;">
-	<span style="color:red;font-size:20px;">分数:</span><input type="text" id="text" value="0" style="text-align:right;color:red;font-size:20px;">
+<div id="tools">
+	<input type="button" id="start" value="开始">
+	<input type="button" id="pause" value="暂停" >
+	<span id="score">分数:</span><input type="text" id="text" value="0">
 </div>
 <div id="ground"></div>
 <script type="text/javascript" src="js/eatsnake.js"></script>
