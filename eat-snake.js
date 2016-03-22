@@ -1,7 +1,7 @@
 // 创建ground
 var ground = document.getElementById("ground");
-for (var i = 0; i < 50; i++) { // 一行50个格子，刚好等于width 1000px;
-	for (var j = 0; j < 25; j++) { // 一列25个格子，刚好等于height 500px;
+for (var i = 0; i < 50; i++) { 
+	for (var j = 0; j < 25; j++) { 
 		var box = document.createElement("div");
 		box.className = "block";
 		ground.appendChild(box);
@@ -67,8 +67,8 @@ var n = 0; //起始分数
 function move(dir) {
 	var snakehead = snakeBody[0];
 	for (var i = snakeBody.length - 1; i > 0; i--) {
-		snakeBody[i].style.left = snakeBody[i - 1].offsetLeft + "px"; // 除了蛇头，后面的蛇身均向前移动一个宽度
-		snakeBody[i].style.top = snakeBody[i - 1].offsetTop + "px"; // 除了蛇头，后面的蛇身均向上移动一个宽度
+		snakeBody[i].style.left = snakeBody[i - 1].offsetLeft + "px"; 
+		snakeBody[i].style.top = snakeBody[i - 1].offsetTop + "px"; 
 	};
 	switch (dir) {
 		case "left":
